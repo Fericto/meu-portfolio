@@ -1,0 +1,45 @@
+.header {
+  height: 50vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.headerContainer {
+  position: relative;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.textLight {
+  color: var(--color-text-secondary);
+}
+
+.nav {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--color-text);
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .header {
+    height: auto;
+    padding: 7rem 0 3rem;
+  }
+}

@@ -1,6 +1,6 @@
-import { projects } from "../projectsData";
+import { projects } from "../projectsData.js";
 import ProjectCard from "./ProjectCard.jsx";
-import styles from "./Projects.module.css";
+import styles from "./Styles/Projects.module.css";
 
 function Projects() {
   return (
@@ -8,14 +8,7 @@ function Projects() {
       <h2>Meus Projetos:</h2>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            liveUrl={project.liveUrl}
-            sourceUrl={project.sourceUrl}
-          />
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </section>

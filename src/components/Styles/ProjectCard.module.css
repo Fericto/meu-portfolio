@@ -1,0 +1,83 @@
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3, .card p {
+  padding: 0 1rem;
+}
+.cardLinks {
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.projectItem {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectItem:hover {
+  border-color: var(--color-primary);
+  background: transparent;
+}
+
+.projectItemImage {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 200px; /* Altura fixa para a imagem */
+}
+
+.projectItemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço */
+}
+
+.projectItem h3 {
+  margin: 1.2rem 0 1rem;
+}
+
+.projectDescription {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.projectItemCta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
